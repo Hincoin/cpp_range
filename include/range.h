@@ -33,7 +33,7 @@ namespace whoshuu {
 				typedef T& reference;
 				typedef T* pointer;
 
-				iterator(value_type_T value, value_type_U step) : step_{ step }, value_{ value } {}
+				iterator(value_type_T value, value_type_U step) : step_{ step } , value_{ value } {}
 				iterator operator++() { value_ += step_; return *this; }
 				reference operator*() { return value_; }
 				const pointer operator->() { return &value_; }
