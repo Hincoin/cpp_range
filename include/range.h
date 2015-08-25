@@ -11,7 +11,9 @@ namespace whoshuu {
 		template <typename T,typename U>
 		class Range {
 		public:
-			Range(const T& start, const T& stop, const U& step) : start_{ start }, stop_{ stop }, step_{ step } {
+			Range(const T& start, const T& stop, const U& step) : start_{ start }, stop_{ stop }, 
+									      step_{ step } 
+			{
 				if (step_ == 0) {
 					throw std::invalid_argument("Range step argument must not be zero");
 				}
